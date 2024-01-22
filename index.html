@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockeys Club</title>
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font  Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <!-- Tailwind and DaisyUI Link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -14,14 +24,350 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'secondary-color': '#0d0d12cc',
               }
             }
           }
         }
       </script>
-      
+
+    <style>
+        .common-font{
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="common-font">
+    <header class="container mx-auto">
+
+        <!-- banner section -->
+
+        <div class="relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="Images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/tropy-3.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+              </div>
+              <div class="lg:absolute right-10 bottom-10 lg:w-2/5 bg-black p-5 rounded-lg space-y-3 mt-5">
+                <h2 class="text-3xl lg:text-xl font-bold text-white">Meet all the heroes from the field</h2>
+                <p class="text-[#f1f1f1b6] sm:text-xl lg:text-xs">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat dolor. Purus urna in sit nullam proin.</p>
+              </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+
+        <!-- professional hockeys club section -->
+
+      <div class="mt-28">
+        <div class="text-center lg:w-2/4 mx-auto">
+            <h3 class="text-3xl font-bold text-black mb-3">Professional Hockeys Club</h3>
+            <p class="text-secondary-color font-bold">Dit amet consectetur. Condimentum dignissim      adipiscing aliquam turpis placerat
+               dolor. Purus urna in sit nullam proin</p>
+        </div>
+
+        <div class="lg:flex gap-x-3 justify-between items-center mt-12 space-y-4"> 
+            <div class="text-center space-y-3 lg:space-y-2">
+                <div class="radial-progress text-error font-bold" style="--value:87;" role="progressbar"><span class="text-black font-extrabold">87%</span></div>
+                <h2 class="font-bold text-black text-xl lg:text-x ">Prayer Facility</h2>
+                <p class="text-secondary-color font-bold">Amet consectetur. Condimentum
+                    dignissim adipiscing</p>
+            </div>
+            <div class="text-center space-y-3 lg:space-t-2">
+                <div class="radial-progress text-primary font-bold" style="--value:95;" role="progressbar"><span class="text-black font-extrabold">95%</span></div>
+                <h2 class="font-bold text-black text-xl lg:text-x ">Experienced Coach</h2>
+                <p class="text-secondary-color font-bold">Amet consectetur. Condimentum
+                    dignissim adipiscing</p>
+            </div>
+            <div class="text-center space-y-3 lg:space-y-2">
+                <div class="radial-progress text-secondary font-bold" style="--value:90;" role="progressbar"><span class="text-black font-extrabold">90%</span></div>
+                <h2 class="font-bold text-black text-xl lg:text-x ">Senior Player</h2>
+                <p class="text-secondary-color font-bold">Amet consectetur. Condimentum
+                    dignissim adipiscing</p>
+            </div>
+            <div class="text-center space-y-3 lg:space-y-2">
+                <div class="radial-progress text-accent font-bold" style="--value:80;" role="progressbar"><span class="text-black font-extrabold">80%</span></div>
+                <h2 class="font-bold text-black text-xl lg:text-x ">Training Ground</h2>
+                <p class="text-secondary-color font-bold">Amet consectetur. Condimentum
+                    dignissim adipiscing</p>
+            </div>
+        </div>
+      </div>
+
+      <!-- Program Sections -->
+
+      <div class="mt-28 w-11/12 mx-auto">
+        <div class="text-center lg:w-2/4 mx-auto">
+            <h3 class="text-3xl font-bold text-black mb-3">Program Sections</h3>
+            <p class="text-secondary-color font-bold">Dit amet consectetur. Condimentum dignissim      adipiscing aliquam turpis placerat
+               dolor. Purus urna in sit nullam proin</p>
+        </div>
+
+      <div class="mt-12">
+        <div class="lg:flex items-center justify-between">
+           <div class="relative">
+            <div class="mb-6 lg:mb-0">
+                <img src="Images/2.png" alt="">
+            </div>
+            <div class="space-y-5 lg:space-y-3 absolute bottom-12 lg:bottom-6 left-6">
+                <h2 class="text-2xl font-extrabold text-white">Junior Program</h2>
+                <p class="font-bold text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet
+                    nunc morbi nulla. Tortor congue sed et in</p>
+                    <button class="text-xl font-bold bg-red-500 px-3 py-2 text-white rounded-lg">Register Now</button>
+            </div>
+           </div>
+           <div class="relative">
+            <div class="mb-6 lg:mb-0">
+                <img src="Images/3.png" alt="">
+            </div>
+            <div class="space-y-5 lg:space-y-3 absolute bottom-12 lg:bottom-6 left-6">
+                <h2 class="text-2xl font-extrabold text-white">Teenager Program</h2>
+                <p class="font-bold text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet
+                    nunc morbi nulla. Tortor congue sed et in</p>
+                    <button class="text-xl font-bold bg-red-500 px-3 py-2 text-white rounded-lg">Register Now</button>
+            </div>
+           </div>
+        </div>
+        <div class="relative mt-6">
+            <div class="mb-6 lg:mb-0">
+                <img class="h-72 lg:h-auto" src="Images/4.png" alt="">
+            </div>
+            <div class="w-auto lg:w-2/4 space-y-5 lg:space-y-3 absolute bottom-12 lg:bottom-6 left-6">
+                <h2 class="text-2xl font-extrabold text-white">Professional Program</h2>
+                <p class="font-bold text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet
+                    nunc morbi nulla. Tortor congue sed et in</p>
+                    <button class="text-xl font-bold bg-red-500 px-3 py-2 text-white rounded-lg">Register Now</button>
+            </div>
+           </div>
+      </div>
+      </div>
+
+      <!-- Our New Products Section -->
+
+     <div class="mt-28">
+        <div class="text-center lg:w-2/4 mx-auto">
+            <h3 class="text-3xl font-bold text-black mb-3">Our New Products</h3>
+            <p class="text-secondary-color font-bold">Dit amet consectetur. Condimentum dignissim      adipiscing aliquam turpis placerat
+               dolor. Purus urna in sit nullam proin</p>
+         </div>
     
+       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-12">
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/5.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex items-center gap-8">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/6.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex items-center gap-8">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/7.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex gap-8 items-center">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/8.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex gap-8 items-center">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/9.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex gap-8 items-center">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+        <div class="lg:flex items-center justify-between p-4 lg:ml-6">
+            <div>
+                <img class="w-full" src="Images/10.png" alt="">
+            </div>
+        <div class="space-y-3 ml-4 mt-6 lg:mt-auto">
+            <div class="flex gap-8 items-center">
+                <div class="rating flex items-center">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 mr-2" />
+                    <h2>5.0</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-eye mr-2"></i>
+                    <h2>20</h2>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-heart mr-2"></i>
+                    <h2>200</h2>
+                </div>
+               </div>
+            <h2 class="text-2xl lg:text-xl font-extrabold text-black">World Cup Flags Football</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. </p>
+                <div class="lg:flex justify-between items-center w-11/12">
+                    <h2 class="text-red-700 font-bold mb-3">Price-$22.00</h2>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-truck mr-2"></i>
+                     <h4>Delivery Fee : Free</h4>
+                    </div>
+                </div>
+        </div>
+           </div>
+    
+       </div>
+     </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
