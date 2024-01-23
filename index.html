@@ -38,11 +38,33 @@
     </style>
 </head>
 <body class="common-font">
-    <header class="container mx-auto px-5">
+    <header class="container mx-auto px-5 mt-8">
+
+        <!-- navbar section -->
+
+        <div class="navbar">
+            <div class="navbar-start">
+                <i class="fa-solid fa-bars text-2xl lg:hidden mr-5"></i>
+              <a class="text-4xl font-extrabold text-black">Hockey<span class="text-red-500 font-extrabold">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="flex items-center justify-between space-x-10 font-bold text-[16px] text-slate-600">
+               <li><a class="text-red-700" href="">Home</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Pages</a></li>
+               <li><a href="">Blog</a></li>
+               <li><a href="">Contact</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end flex items-center">
+                <i class="fa-solid fa-magnifying-glass hidden lg:flex text-slate-500 text-xl"></i>
+              <a class="btn bg-red-500 text-white text-xl px-7 ml-5 hover:bg-red-500">Get Ticket</a>
+            </div>
+          </div>
 
         <!-- banner section -->
 
-        <div class="relative mt-28">
+        <div class="relative mt-20">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="Images/1.png" class="w-full" />
